@@ -23,7 +23,7 @@ export default function Greeting() {
             <SocialMedia />
             <div className="button-greeting-div">
               <Button text="Contact me" href="#contact" />
-              <Button text="See my resume" newTab={true} href={greeting.resumeLink} />
+              <Button text="See my resume" newTab={true} href={greeting.resumeLink} rel="noopener noreferrer" />
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ import { Fade } from "react-reveal";
 export default function Achievement() {
   return (
     <Fade bottom duration={1000} distance="20px">
-      <div className="main" id="achievements" style={{ paddingTop: "90px" }}>
+      <div className="main" id="achievements" style={{ paddingTop: "100px" }}>
       <div className="achievement-main-div">
         <div className="achievement-header">
           <h1 className="heading achievement-heading">{achievementSection.title}</h1>
