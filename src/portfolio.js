@@ -136,6 +136,7 @@ const openSource = {
 // Some Big Projects You have worked with your company
 
 const bigProjects = {
+    viewBigProjecst: false,
     title: "Big Projects",
     subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
     projects: [{
@@ -154,7 +155,7 @@ const bigProjects = {
 const achievementSection = {
 
     title: emoji("Achievements And Certifications 🏆 "),
-    subtitle: "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    subtitle: "",
 
     achivementsCards: [
         {

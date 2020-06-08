@@ -7,7 +7,6 @@ export default function GithubRepoCard({ repo }) {
     var win = window.open(url, "_blank");
     win.focus();
   }
-  console.log(repo);
   return (
     <Fade bottom duration={1000} distance="20px">
     <div>

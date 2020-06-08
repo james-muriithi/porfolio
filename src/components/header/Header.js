@@ -1,15 +1,17 @@
 import React from "react";
 import "./Header.css";
 import {Fade} from "react-reveal";
-import {greeting, workExperiences} from "../../portfolio";
+import {greeting, workExperiences, bigProjects} from "../../portfolio";
 
 function Header() {
   const exp = workExperiences.viewExperiences;
+  const proj = bigProjects.viewBigProjecst;
+
   return (
     <Fade top duration={1000} distance="20px">
     <div>
-      <header className="header">
-        <a href="" className="logo">
+      <header className="header" id="header">
+        <a href="/" className="logo">
           <span className="grey-color"> &lt;</span>
           <span className="logo-name">{greeting.username}</span>
           <span className="grey-color">/&gt;</span>
@@ -30,9 +32,11 @@ function Header() {
           <li>
             <a href="#opensource">Open Source</a>
           </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
+          {proj === true &&
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+          }
           <li>
             <a href="#achievements">Achievements</a>
           </li>

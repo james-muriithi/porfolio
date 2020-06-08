@@ -18,7 +18,18 @@ export default function Top() {
     window.onscroll = function() {scrollFunction();};
     window.onload = function() {scrollFunction();}; //To make sure that this button is not visible at starting.
     // When the user clicks on the button, scroll to the top of the document
+    function showOnScroll() {
+        const height = parseInt(document.getElementById("greeting").offsetHeight - 200)
+        if (document.body.scrollTop > height || document.documentElement.scrollTop > height) {
+            document.getElementById("header").parentNode.classList.add("show-header");
+        } else {
+            document.getElementById("header").parentNode.classList.remove("show-header");
+        }
+    }
+
+    window.onscroll = function () { showOnScroll(); };
+    window.onload = function () { showOnScroll(); };
     return (
-        <button onClick={TopEvent} id="topButton" title="Go to top"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
+        <button onClick={TopEvent} id="topButton" title="Go to top"><i className="fas fa-chevron-up" aria-hidden="true"></i></button>
         );
     }
