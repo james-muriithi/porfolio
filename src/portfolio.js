@@ -8,7 +8,7 @@ const greeting = {
     /* Your Summary And Greeting Section */
     username: "James Muriithi",
     title: "Hi there, I'm James",
-    subTitle: emoji("A passionate Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."),
+    subTitle: emoji("A passionate Software Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / PHP and some other cool libraries and frameworks."),
     resumeLink: "https://drive.google.com/file/d/13s87SR6sSPCCMS-aX3qkGoS7HuC72Rbt/view?usp=sharing"
 };
 
@@ -72,6 +72,10 @@ const skillsSection = {
         {
             skillName: "python",
             fontAwesomeClassname: "fab fa-python"
+        },
+        {
+            skillName: "java",
+            fontAwesomeClassname: "fab fa-java"
         }
     ]
 };

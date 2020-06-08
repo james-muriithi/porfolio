@@ -6,7 +6,7 @@ import {Fade} from "react-reveal";
 
 export default function Skills() {
   return (
-    <div className="main" id="skills">
+    <div className="main" id="skills" style={{paddingTop: "40px"}}>
       <div className="skills-main-div">
         <Fade left duration={1000}>
         <div className="skills-image-div">

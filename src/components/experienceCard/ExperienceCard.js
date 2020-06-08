@@ -1,4 +1,4 @@
-import React, { useState, useEffect, createRef } from "react";
+import React, { useState, createRef } from "react";
 import "./ExperienceCard.css";
 import ColorThief from "colorthief";
 
@@ -16,7 +16,7 @@ export default function ExperienceCard({ cardInfo }) {
   }
 
   const GetDescBullets = ({ descBullets }) => {
-    return descBullets ? descBullets.map((item) => <li className="subTitle">{item}</li>) : null
+    return descBullets ? descBullets.map((item, i) => <li key={i} className="subTitle">{item}</li>) : null
   };
 
   return (
