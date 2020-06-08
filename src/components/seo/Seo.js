@@ -138,8 +138,8 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
   const breadcrumb = {
     '@context': 'http://schema.org',
     '@type': 'BreadcrumbList',
-    description: 'Pratik Shivaraikar\'s personal website.',
-    name: 'Pratik Shivaraikar',
+    description: 'James Muriithi\'s personal website.',
+    name: 'James Muriithi',
     itemListElement,
   }
 
@@ -172,7 +172,7 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
 SEO.defaultProps = {
   title: `James Muriithi`,
   desc: `Software Engineer. James Muriithi's personal website.`,
-  banner: `/src/images/favicon.png`,
+  banner: `/src/assets/images/favicon.png`,
   pathname: null,
   article: false,
   node: null,

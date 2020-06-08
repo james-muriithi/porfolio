@@ -12,7 +12,7 @@ import '../styles/font-awesome/css/all.css'
 const IndexPage = () => (
   <>
     <SEO 
-      title="James Muuriithi"
+      title="James Muriithi - Portfolio"
       desc="Software Engineer. James Muriithi's personal website." 
     />
     <Main />

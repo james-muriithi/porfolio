@@ -1,15 +1,16 @@
+require('dotenv').config()
 module.exports = {
   siteMetadata: {
     title: `James Muriithi`,
     description: `Software Engineer. James Muriithi's personal website. Passionate about coding and loves technology. Codes in PHP, React, Python, Flutter, JavaScript.`,
-    author: `James Muriithi <pratik.shivaraikar@gmail.com>`,
-    siteUrl: `https://pratikms.com/`,
+    author: `James Muriithi <muriithijames556@gmail.com>`,
+    siteUrl: `https://james-muriithi.github.io/`,
     siteLanguage: `en`,
     ogLanguage: `en`,
     headline: `James Muriithi`,
     twitter: `@jam_es_muriithi`,
     facebook: `james-muriithi`,
-    banner: `/assets/src/images/favicon.png`
+    banner: `/src/assets/images/favicon.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -17,7 +18,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/assets/src/images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -31,7 +32,7 @@ module.exports = {
         background_color: `#0a192f`,
         theme_color: `#0a192f`,
         display: `standalone`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     {

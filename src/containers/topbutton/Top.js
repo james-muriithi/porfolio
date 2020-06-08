@@ -15,9 +15,7 @@ export default function Top() {
             document.getElementById("topButton").style.visibility = "hidden";
         }
     }
-    window.onscroll = function() {scrollFunction();};
-    window.onload = function() {scrollFunction();}; //To make sure that this button is not visible at starting.
-    // When the user clicks on the button, scroll to the top of the document
+    
     function showOnScroll() {
         const height = parseInt(document.getElementById("greeting").offsetHeight - 200)
         if (document.body.scrollTop > height || document.documentElement.scrollTop > height) {
@@ -27,8 +25,16 @@ export default function Top() {
         }
     }
 
-    window.onscroll = function () { showOnScroll(); };
-    window.onload = function () { showOnScroll(); };
+    if (typeof window !== 'undefined') {
+        window.onscroll = function () { scrollFunction(); };
+        window.onload = function () { scrollFunction(); }; //To make sure that this button is not visible at starting.
+    // When the user clicks on the button, scroll to the top of the document
+    
+        window.onscroll = function () { showOnScroll(); };
+        window.onload = function () { showOnScroll(); };
+    }
+
+    
     return (
         <button onClick={TopEvent} id="topButton" title="Go to top"><i className="fas fa-chevron-up" aria-hidden="true"></i></button>
         );
