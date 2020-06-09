@@ -9,7 +9,8 @@ export default function Top() {
     }
     // When the user scrolls down 20px from the top of the document, show the button   
     function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        console.log(document.documentElement.scrollTop);
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
             document.getElementById("topButton").style.visibility = "visible";
         } else {
             document.getElementById("topButton").style.visibility = "hidden";
@@ -17,7 +18,7 @@ export default function Top() {
     }
     
     function showOnScroll() {
-        const height = parseInt(document.getElementById("greeting").offsetHeight - 200)
+        const height = parseInt(document.getElementById("greeting").offsetHeight - 250)
         if (document.body.scrollTop > height || document.documentElement.scrollTop > height) {
             document.getElementById("header").parentNode.classList.add("show-header");
         } else {
@@ -26,12 +27,9 @@ export default function Top() {
     }
 
     if (typeof window !== 'undefined') {
-        window.onscroll = function () { scrollFunction(); };
-        window.onload = function () { scrollFunction(); }; //To make sure that this button is not visible at starting.
+        window.onscroll = function () { scrollFunction(); showOnScroll(); };
+        window.onload = function () { scrollFunction(); showOnScroll(); }; //To make sure that this button is not visible at starting.
     // When the user clicks on the button, scroll to the top of the document
-    
-        window.onscroll = function () { showOnScroll(); };
-        window.onload = function () { showOnScroll(); };
     }
 
     

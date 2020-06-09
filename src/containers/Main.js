@@ -16,6 +16,7 @@ export default class Main extends Component {
     return (
       <div>
         <Header />
+        <Top />
         <Greeting />
         <Skills />
         <StackProgress />
@@ -25,7 +26,7 @@ export default class Main extends Component {
         <Achievement />
         <Profile />
         <Footer />
-        <Top />
+        
       </div>
     );
   }

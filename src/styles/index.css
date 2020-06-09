@@ -20,6 +20,8 @@ body {
 }
 
 body {
+    background: #0a192f;
+    color: #f4f4f4;
     margin: 0;
     font: 19px / 23px Montserrat, "Montserrat", sans-serif;
     font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
