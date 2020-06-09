@@ -1,11 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Header.css";
 import {Fade} from "react-reveal";
 import {greeting, workExperiences, bigProjects} from "../../portfolio";
+import DarkModeToggle from "react-dark-mode-toggle";
 
 function Header() {
   const exp = workExperiences.viewExperiences;
   const proj = bigProjects.viewBigProjecst;
+  const [ isDarkMode, setIsDarkMode ] = useState(false);
+
+  console.log(isDarkMode);
 
   return (
     <Fade top duration={1000} distance="20px">
@@ -20,7 +24,18 @@ function Header() {
         <label className="menu-icon" htmlFor="menu-btn">
           <span className="navicon"></span>
         </label>
+          
         <ul className="menu">
+            <li>
+              <span>
+                <DarkModeToggle
+                  checked={isDarkMode}
+                  onChange={setIsDarkMode}
+                  size={80}
+                  speed={1}
+                />
+              </span>
+            </li>
           <li>
             <a href="#skills">Skills</a>
           </li>
