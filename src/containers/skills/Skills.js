@@ -13,7 +13,7 @@ export default function Skills() {
           <img alt="Saad Working" src={require("../../assets/images/developerActivity.svg")}></img>
         </div>
         </Fade>
-        <Fade right duration={1000}>
+        <Fade up duration={1000}>
         <div className="skills-text-div">
           <h1 className="skills-heading">{skillsSection.title} </h1>
           <p className="subTitle skills-text-subtitle">{skillsSection.subTitle}</p>

@@ -7,8 +7,7 @@ const Save = (isDark) =>{
 
 const Get = () => {
     if (typeof window !== 'undefined') {
-        const theme = window.localStorage.getItem('theme', theme).trim()
-        console.log(theme);
+        const theme = window.localStorage.getItem('theme')
         return theme === 'light' ? false : true
     }else{
         return true;

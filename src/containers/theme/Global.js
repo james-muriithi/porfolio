@@ -1,21 +1,27 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
-  *,
-  *::after,
-  *::before {
-    box-sizing: border-box;
-  }
-
   body {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    transition: all 0.25s linear;
   }
   a.main-button{
       background: ${({ theme }) => theme.buttonBackground};
       border: 1px solid ${({ theme }) => theme.buttonBorder};
   }
+
+  .header .menu-icon .navicon {
+    background: ${({ theme }) => theme.text};
+  }
+
+  .header .menu-icon .navicon:before,
+    .header .menu-icon .navicon:after {
+        background: ${({ theme }) => theme.text};
+    }
+    .header .logo-name {
+        color: ${({ theme }) => theme.logoColor};
+    }
+  
   .main-button:hover{
       background: ${({ theme }) => theme.buttonHoverBackGround};
       color: ${({ theme }) => theme.buttonHoverColor};

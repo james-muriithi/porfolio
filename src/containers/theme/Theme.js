@@ -2,6 +2,7 @@
 export const lightTheme = {
     body: '#FFF',
     text: '#363537',
+    logoColor: 'rgb(85, 26, 139)',
     progressBackground: '#f3efef',
     gradient: 'linear-gradient(#39598A, #79D7ED)',
     subTitle: '#848c94',
@@ -25,6 +26,7 @@ export const darkTheme = {
     gradient: 'linear-gradient(#091236, #1E215D)',
     subTitle: '#bbc1c3',
     subTitleHover: '6b737b',
+    logoColor: '#bbbfc4',
     buttonBackground: 'transparent',
     buttonBorder: '#55198b',
     buttonHoverBackGround: '#172a45',
