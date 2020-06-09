@@ -171,8 +171,8 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
 
 SEO.defaultProps = {
   title: `James Muriithi`,
-  desc: `Software Engineer. James Muriithi's personal website.`,
-  banner: `/src/assets/images/favicon.png`,
+  desc: `Software Engineer. James Muriithi's personal website. Passionate about coding and loves technology. Codes in PHP, React, Python, Flutter, JavaScript.`,
+  banner: `src/assets/images/favicon.png`,
   pathname: null,
   article: false,
   node: null,
