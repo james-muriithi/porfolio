@@ -44,12 +44,6 @@ module.exports = {
         respectDNT: true,
       },
     },
-    {
-      resolve: "gatsby-plugin-google-tagmanager",
-      options: {
-        id: process.env.GATSBY_GOOGLE_TAG_MANAGER_ID || "none",
-      },
-    },
     `gatsby-plugin-advanced-sitemap`,
     {
       resolve: `gatsby-plugin-offline`,
@@ -59,3 +53,10 @@ module.exports = {
     }
   ],
 }
+
+// {
+//   resolve: "gatsby-plugin-google-tagmanager",
+//     options: {
+//     id: process.env.GATSBY_GOOGLE_TAG_MANAGER_ID || "none",
+//       },
+// },

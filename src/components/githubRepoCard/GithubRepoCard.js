@@ -4,8 +4,10 @@ import { Fade } from "react-reveal";
 
 export default function GithubRepoCard({ repo }) {
   function openRepoinNewTab(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
+    if (typeof window !== 'undefined') {
+      var win = window.open(url, "_blank");
+      win.focus();
+    }
   }
   return (
     <Fade bottom duration={1000} distance="20px">

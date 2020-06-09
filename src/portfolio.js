@@ -165,7 +165,7 @@ const achievementSection = {
         {
             title: "PWA Web App Developer",
             subtitle: "Completed Certifcation from PluralSight for PWA Web App Development",
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu93Bd6LDbxPEOXr-hfLqLYzmHny8c0MJoI3exQP-lwpFLRT7g&s",
+            image: require('./assets/images/pwa1.png'),
             footerLink: [
                 { name: "Certification", url: "" },
                 { name: "Final Project", url: "https://moviepalace.herokuapp.com/" }

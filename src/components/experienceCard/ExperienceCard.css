@@ -1,13 +1,9 @@
     .experience-card {
-        background-color: rgb(255, 255, 255);
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
         border-radius: 10px;
-        border: 1px solid rgba(211, 211, 211, 0.397);
         width: calc(100% / 3);
-    }
-    
-    .experience-card:hover {
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
     }
     
     .experience-banner {
@@ -76,13 +72,11 @@
         margin-right: auto;
         width: 8rem;
         height: 8rem;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
         border-radius: 50%;
     }
     
     .experience-text-role {
         text-align: center;
-        color: black;
         font-weight: 700;
         font-size: 25px;
         margin: 0px;
@@ -92,7 +86,6 @@
     
     .experience-text-date {
         text-align: center;
-        color: black;
         font-size: 19px;
         margin: 0px;
         padding-top: 1rem;

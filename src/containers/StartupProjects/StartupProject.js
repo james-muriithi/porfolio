@@ -5,8 +5,10 @@ import { Fade } from "react-reveal";
 
 export default function StartupProject() {
   function openProjectInNewWindow(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
+    if (typeof window !== 'undefined') {
+      var win = window.open(url, "_blank");
+      win.focus();
+    }
   }
 
     if (bigProjects.viewBigProjecst) {

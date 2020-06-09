@@ -30,7 +30,8 @@
         "react-helmet": "^6.1.0",
         "react-reveal": "^1.2.2",
         "react-scripts": "^3.4.1",
-        "react-twitter-embed": "3.0.3"
+        "react-twitter-embed": "3.0.3",
+        "styled-components": "^5.1.1"
     },
     "scripts": {
         "build": "gatsby build",

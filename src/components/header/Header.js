@@ -1,15 +1,19 @@
-import React, {useState} from "react";
+import React, {useState, useContext} from "react";
 import "./Header.css";
 import {Fade} from "react-reveal";
 import {greeting, workExperiences, bigProjects} from "../../portfolio";
 import DarkModeToggle from "react-dark-mode-toggle";
+import Context from "../../containers/theme/Context";
 
 function Header() {
   const exp = workExperiences.viewExperiences;
   const proj = bigProjects.viewBigProjecst;
-  const [ isDarkMode, setIsDarkMode ] = useState(false);
 
-  console.log(isDarkMode);
+  const { state, dispatch } = useContext(Context);
+
+  const setIsDarkMode = () => {
+    dispatch({ type: "TOGGLE_DARK_MODE" });
+  };
 
   return (
     <Fade top duration={1000} distance="20px">
@@ -29,10 +33,10 @@ function Header() {
             <li>
               <span>
                 <DarkModeToggle
-                  checked={isDarkMode}
+                  speed={2}
+                  checked={state.isDark}
                   onChange={setIsDarkMode}
                   size={80}
-                  speed={1}
                 />
               </span>
             </li>

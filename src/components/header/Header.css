@@ -12,15 +12,10 @@
     transition: top 5s ease 0s;
     right: 0;
     left: 0;
-    background: #0a192f;
     z-index: 1000;
     -webkit-animation-name: slideInDown!important;
     animation-name: slideInDown!important;
     animation-duration: 3s;
-}
-
-.show-header .header ul {
-    background: #0a192f;
 }
 
 .show-header .header ul li a {
@@ -74,7 +69,7 @@
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .grey-color {
@@ -83,21 +78,14 @@
 
 .header li span {
     display: block;
-    padding-top: 15px;
-    padding-right: 20px;
+    padding: 15px 20px 0px 20px;
     max-height: 61px;
 }
 
 .header li a {
     display: block;
     padding: 20px 20px;
-    color: black;
     text-decoration: none;
-}
-
-.header li a:hover,
-.header .menu-btn:hover {
-    background-color: #f4f4f4;
 }
 
 .header .logo {

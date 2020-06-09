@@ -42,10 +42,6 @@
     line-height: 40px;
 }
 
-.subTitle {
-    color: #5f666d;
-}
-
 .greeting-image-div>img {
     max-width: 100%;
     height: auto;
@@ -57,6 +53,8 @@
     animation-name: wave;
     display: inline-block;
     transform-origin: 70% 70%;
+    width: 72px;
+    height: 72px;
 }
 
 @keyframes wave {

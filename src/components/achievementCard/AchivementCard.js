@@ -2,8 +2,10 @@ import React from "react";
 import './AchievementCard.css';
 export default function AchivementCard({ cardInfo }) {
   function openUrlInNewTab(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
+    if (typeof window !== 'undefined') {
+      var win = window.open(url, "_blank");
+      win.focus();
+    }
   }
 
   return (
