@@ -19,7 +19,7 @@ const socialMediaLinks = {
     github: "https://github.com/james-muriithi",
     linkedin: "https://www.linkedin.com/in/james-muriithi/",
     gmail: "muriithijames556@gmail.com",
-    twitter: "https://www.twitter.com/jam_es-muriithi"
+    twitter: "https://www.twitter.com/jam_es_muriithi"
         // Instagram and Twitter are also supported in the links!
 };
 

@@ -18,7 +18,6 @@ const IndexPage = () => {
     <>
       <SEO
         title="James Muriithi - Portfolio"
-        desc="Software Engineer. James Muriithi's personal website."
       />
       <Context.Provider value={{ state, dispatch }}>
         <ThemeProvider theme={state.isDark ? darkTheme : lightTheme}>

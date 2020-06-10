@@ -98,7 +98,7 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
         '@type': 'Person',
         name: author,
       },
-      copyrightYear: '2019',
+      copyrightYear: '2020',
       creator: {
         '@type': 'Person',
         name: author,
@@ -171,8 +171,8 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
 
 SEO.defaultProps = {
   title: `James Muriithi`,
-  desc: `Software Engineer. James Muriithi's personal website. Passionate about coding and loves technology. Codes in PHP, React, Python, Flutter, JavaScript.`,
-  banner: `src/assets/images/favicon.png`,
+  desc: `A passionate Software Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / PHP and some other cool libraries and frameworks.`,
+  banner: `/me-icon.jpg`,
   pathname: null,
   article: false,
   node: null,

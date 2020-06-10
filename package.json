@@ -35,11 +35,8 @@
     },
     "scripts": {
         "build": "gatsby build",
-        "develop": "gatsby develop",
-        "predeploy": "npm run build",
-        "start": "npm run develop",
-        "serve": "gatsby serve",
-        "deploy": "gh-pages -b master -d public"
+        "start": "gatsby develop",
+        "serve": "gatsby serve"
     },
     "eslintConfig": {
         "extends": "react-app"

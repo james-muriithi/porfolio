@@ -2,15 +2,15 @@ require('dotenv').config()
 module.exports = {
   siteMetadata: {
     title: `James Muriithi`,
-    description: `Software Engineer. James Muriithi's personal website. Passionate about coding and loves technology. Codes in PHP, React, Python, Flutter, JavaScript.`,
+    description: `A passionate Software Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / PHP and some other cool libraries and frameworks.`,
     author: `James Muriithi <muriithijames556@gmail.com>`,
-    siteUrl: `https://james-muriithi.github.io/`,
+    siteUrl: `https://james-muriithi.firebaseapp.com`,
     siteLanguage: `en`,
     ogLanguage: `en`,
     headline: `James Muriithi`,
     twitter: `@jam_es_muriithi`,
     facebook: `james-muriithi`,
-    banner: `/src/assets/images/favicon.png`
+    banner: `/me-icon.jpg`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,7 +18,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/assets/images`,
+        path: `${__dirname}/src/assets/images/`,
       },
     },
     `gatsby-transformer-sharp`,
