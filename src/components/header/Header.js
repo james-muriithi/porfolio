@@ -2,8 +2,10 @@ import React, {useState, useContext} from "react";
 import "./Header.css";
 import {Fade} from "react-reveal";
 import {greeting, workExperiences, bigProjects} from "../../portfolio";
-import DarkModeToggle from "react-dark-mode-toggle";
+import Toggle from "../toggle/Toggle";
 import Context from "../../containers/theme/Context";
+import sun from '../../assets/images/sun.png';
+import moon from '../../assets/images/moon.png';
 
 function Header() {
   const exp = workExperiences.viewExperiences;
@@ -24,21 +26,43 @@ function Header() {
           <span className="logo-name">{greeting.username}</span>
           <span className="grey-color">/&gt;</span>
         </a>
-        <input className="menu-btn" type="checkbox" id="menu-btn" />
+        <div className="fr">
+          <input className="menu-btn" type="checkbox" id="menu-btn" />         
         <label className="menu-icon" htmlFor="menu-btn">
           <span className="navicon"></span>
         </label>
+
+          <span className="toggle">
+            <Toggle
+              icons={{
+                checked: (
+                  <img
+                    src={moon}
+                    width="16"
+                    height="16"
+                    role="presentation"
+                    style={{ pointerEvents: 'none' }}
+                  />
+                ),
+                unchecked: (
+                  <img
+                    src={sun}
+                    width="16"
+                    height="16"
+                    role="presentation"
+                    style={{ pointerEvents: 'none' }}
+                  />
+                ),
+              }}
+              checked={state.isDark}
+              onChange={e =>
+                setIsDarkMode()
+              }
+            />
+          </span>
           
         <ul className="menu">
             <li>
-              <span>
-                <DarkModeToggle
-                  speed={2}
-                  checked={state.isDark}
-                  onChange={setIsDarkMode}
-                  size={80}
-                />
-              </span>
             </li>
           <li>
             <a href="#skills">Skills</a>
@@ -64,6 +88,8 @@ function Header() {
             <a href="#contact">Contact</a>
           </li>
         </ul>
+
+        </div>
       </header>
     </div>
     </Fade>
