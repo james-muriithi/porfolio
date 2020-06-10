@@ -1,30 +1,43 @@
-import React, { Component } from "react";
+import React, { Component, Suspense, lazy } from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
-import Skills from "./skills/Skills";
-import StackProgress from "./skillProgress/skillProgress";
-import WorkExperience from "./workExperience/WorkExperience";
-import Projects from "./projects/Projects";
-import StartupProject from "./StartupProjects/StartupProject";
-import Achievement from "./achievement/Achievement";
 import Footer from "../components/footer/Footer";
 import Top from "./topbutton/Top";
-import Profile from "./profile/Profile";
-
+const Skills = lazy(() => import("./skills/Skills"))
+const StackProgress = lazy(() => import("./skillProgress/skillProgress"))
+const WorkExperience = lazy(() => import("./workExperience/WorkExperience"))
+const Projects = lazy(() => import("./projects/Projects"))
+const StartupProject = lazy(() => import("./StartupProjects/StartupProject"))
+const Achievement = lazy(() => import("./achievement/Achievement"))
+const Profile = lazy(() => import("./profile/Profile"))
 export default class Main extends Component {
   render() {
     return (
       <div>
         <Header />
+        <Greeting />    
+        <Suspense fallback={<div></div>}>
+          <Skills />
+        </Suspense>
+        <Suspense fallback={<div></div>}>
+          <StackProgress />
+        </Suspense>
+        <Suspense fallback={<div></div>}>
+          <WorkExperience />
+        </Suspense>
+        <Suspense fallback={<div></div>}>
+          <Projects />
+        </Suspense>
+        <Suspense fallback={<div></div>}>
+          <StartupProject />
+        </Suspense>
+        <Suspense fallback={<div></div>}>
+          <Achievement />
+        </Suspense>
+        <Suspense fallback={<div></div>}>
+          <Profile />
+        </Suspense>
         <Top />
-        <Greeting />
-        <Skills />
-        <StackProgress />
-        <WorkExperience />
-        <Projects />
-        <StartupProject />
-        <Achievement />
-        <Profile />
         <Footer />
         
       </div>

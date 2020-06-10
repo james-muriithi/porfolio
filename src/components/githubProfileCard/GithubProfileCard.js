@@ -4,6 +4,9 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {contactInfo} from "../../portfolio";
 import emoji from "react-easy-emoji";
 import { Fade } from "react-reveal";
+import 'lazysizes';
+// import a plugin
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 export default function GithubProfileCard({prof}) {
   if (prof.hireable!==null){
@@ -33,7 +36,7 @@ export default function GithubProfileCard({prof}) {
             <SocialMedia/>
           </div>
           <div className="image-content-profile">
-            <img src={prof.avatar_url} alt={prof.name} className="profile-image"/>
+            <img data-src={prof.avatar_url} alt={prof.name} className="lazyload profile-image" />
         </div>
       </div>
     </div>

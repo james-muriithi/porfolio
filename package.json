@@ -22,6 +22,7 @@
         "gatsby-transformer-sharp": "^2.5.4",
         "gh-pages": "^2.1.1",
         "graphql": "^14.5.8",
+        "lazysizes": "^5.2.2",
         "prop-types": "^15.7.2",
         "react": "^16.10.2",
         "react-dark-mode-toggle": "0.0.5",
