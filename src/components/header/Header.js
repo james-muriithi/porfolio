@@ -34,6 +34,7 @@ function Header() {
 
           <span className="toggle">
             <Toggle
+              checked={state.isDark}
               icons={{
                 checked: (
                   <img
@@ -54,7 +55,6 @@ function Header() {
                   />
                 ),
               }}
-              checked={state.isDark}
               onChange={e =>
                 setIsDarkMode()
               }

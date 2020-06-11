@@ -3,11 +3,8 @@
  * Forked from https://github.com/aaronshaf/react-toggle/
  * + applied https://github.com/aaronshaf/react-toggle/pull/90
  **/
-
-import './Toggle.css';
-
 import React, { PureComponent } from 'react';
-
+import './Toggle.css';
 // Copyright 2015-present Drifty Co.
 // http://drifty.com/
 // from: https://github.com/driftyco/ionic/blob/master/src/util/dom.ts
@@ -45,12 +42,15 @@ export default class Toggle extends PureComponent {
         };
     }
 
-    componentWillReceiveProps(nextProps) {
-        if ('checked' in nextProps) {
-            this.setState({ checked: !!nextProps.checked });
-            this.previouslyChecked = !!nextProps.checked;
-        }
+    componentDidUpdate (prevProps) {
+    if (prevProps.checked !== this.props.checked) {
+      // Disable linting rule here since this usage of setState inside
+      // componentDidUpdate is OK; see
+      // https://reactjs.org/docs/react-component.html#componentdidupdate
+      // eslint-disable-next-line react/no-did-update-set-state
+      this.setState({ checked: !!this.props.checked })
     }
+  }
 
     handleClick(event) {
         const checkbox = this.input;
