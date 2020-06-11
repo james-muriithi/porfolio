@@ -2,10 +2,8 @@ import React, {useState, useContext} from "react";
 import "./Header.css";
 import {Fade} from "react-reveal";
 import {greeting, workExperiences, bigProjects} from "../../portfolio";
-import Toggle from "../toggle/Toggle";
+import DarkModeToggle from "react-dark-mode-toggle";
 import Context from "../../containers/theme/Context";
-import sun from '../../assets/images/sun.png';
-import moon from '../../assets/images/moon.png';
 
 function Header() {
   const exp = workExperiences.viewExperiences;
@@ -33,32 +31,12 @@ function Header() {
         </label>
 
           <span className="toggle">
-            <Toggle
-              checked={state.isDark}
-              icons={{
-                checked: (
-                  <img
-                    src={moon}
-                    width="16"
-                    height="16"
-                    role="presentation"
-                    style={{ pointerEvents: 'none' }}
-                  />
-                ),
-                unchecked: (
-                  <img
-                    src={sun}
-                    width="16"
-                    height="16"
-                    role="presentation"
-                    style={{ pointerEvents: 'none' }}
-                  />
-                ),
-              }}
-              onChange={e =>
-                setIsDarkMode()
-              }
-            />
+              <DarkModeToggle
+                speed={2}
+                checked={state.isDark}
+                onChange={setIsDarkMode}
+                size={60}
+              />
           </span>
           
         <ul className="menu">
