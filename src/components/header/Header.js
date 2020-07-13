@@ -1,4 +1,4 @@
-import React, {useState, useContext} from "react";
+import React, {useEffect, useState, useContext} from "react";
 import "./Header.css";
 import {Fade} from "react-reveal";
 import {greeting, workExperiences, bigProjects} from "../../portfolio";
@@ -13,7 +13,15 @@ function Header() {
   const exp = workExperiences.viewExperiences;
   const proj = bigProjects.viewBigProjecst;
 
-  const { state, dispatch } = useContext(Context);
+  const myContext = useContext(Context);
+
+  const [ isDark, setDarkMode ] = useState(null) 
+  const {dispatch} = myContext;
+
+  useEffect(() => {
+    const {state} = myContext;
+    setDarkMode(state.isDark);
+  }, [myContext])
 
   const setIsDarkMode = () => {
     dispatch({ type: "TOGGLE_DARK_MODE" });
@@ -35,7 +43,7 @@ function Header() {
         </label>
 
           <span className="toggle">
-              {state.isDark !== 'null' && typeof state.isDark != 'undefined' && <Toggle
+              {isDark !== 'null' && <Toggle
                 // defaultChecked={state.isDark}
                 icons={{
                   checked: (
@@ -58,7 +66,7 @@ function Header() {
                   ),
                 }}
                 aria-label="toggle dark mode"
-                checked={state.isDark}
+                checked={isDark}
                 onChange={setIsDarkMode}
               /> }
           </span>
