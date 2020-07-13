@@ -40,8 +40,6 @@ function Header() {
           </span>
           
         <ul className="menu">
-            <li>
-            </li>
           <li>
             <a href="#skills">Skills</a>
           </li>

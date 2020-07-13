@@ -118,10 +118,11 @@ const workExperiences = {
             company: "SwahiliPot Hub",
             companylogo: require('./assets/images/swahilipotlogo.jpg'),
             date: "May 2019 – Aug 2019",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            desc: "It was a worthwhile experience working at the SwahiliPot Hub. The friendly welcoming staff and the space they have created for a trainee allowed me with ample opportunities to learn and know myself as a worker. These experiences brought out my strength and also the areas I needed to improvise. It added more confidence to my professional approach, built a stronger positive attitude and taught me how to work in a team as a player.",
             descBullets: [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                "Installing Wi-Fi access points",
+                "Configuring routers",
+                "d)	Holding events/meetups"
             ]
         },
     ]
