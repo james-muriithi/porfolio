@@ -26,12 +26,12 @@
         "lazysizes": "^5.2.2",
         "prop-types": "^15.7.2",
         "react": "^16.10.2",
-        "react-dark-mode-toggle": "0.0.5",
         "react-dom": "^16.10.2",
         "react-easy-emoji": "^1.4.0",
         "react-helmet": "^6.1.0",
         "react-reveal": "^1.2.2",
         "react-scripts": "^3.4.1",
+        "react-toggle": "^4.1.1",
         "react-twitter-embed": "3.0.3",
         "styled-components": "^5.1.1"
     },
