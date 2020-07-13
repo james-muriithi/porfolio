@@ -122,7 +122,7 @@ const workExperiences = {
             descBullets: [
                 "Installing Wi-Fi access points",
                 "Configuring routers",
-                "d)	Holding events/meetups"
+                "Holding events/meetups"
             ]
         },
     ]
