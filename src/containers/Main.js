@@ -8,7 +8,7 @@ const Skills = loadable(() => import("./skills/Skills"))
 const StackProgress = loadable(() => import("./skillProgress/skillProgress"))
 const WorkExperience = loadable(() => import("./workExperience/WorkExperience"))
 const Projects = loadable(() => import("./projects/Projects"))
-const Services = loadable(()=> import('./services/Services'))
+const Services = loadable(() => import("./services/Services"))
 const StartupProject = loadable(() =>
   import("./StartupProjects/StartupProject")
 )
