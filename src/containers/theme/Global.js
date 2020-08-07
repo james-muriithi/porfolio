@@ -57,12 +57,14 @@ export const GlobalStyles = createGlobalStyle`
         box-shadow: ${({ theme }) => theme.cardShadow};
     }
     .certificate-card,
+    .service-card,
     .repo-card-div{
         background-color: ${({ theme }) => theme.cardBackground};
         box-shadow: ${({ theme }) => theme.cardShadow};
     }
     .certificate-card:hover,
     .profile-image:hover,
+    .service-card:hover,
     .repo-card-div:hover {
         box-shadow: ${({ theme }) => theme.cardHoverShadow};
     }

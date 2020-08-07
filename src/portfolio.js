@@ -206,8 +206,36 @@ const contactInfo = {
 //Twitter Section
 
 const twitterDetails = {
-  userName: "", //Replace "twitter" with your twitter username without @
+  userName: "jam_es_muriithi", //Replace "twitter" with your twitter username without @
 }
+
+const servicesSection = {
+  title: "Services",
+  services:[
+    {
+      title: 'API design/Integration',
+      description: 'Developing a highly secure, fast and scalable APIs both REST and GraphQL.',
+      image: require('./assets/images/service-1.svg'),
+    }, 
+    {
+      title: 'Web Development',
+      description: 'Get a blazing fast front-end for your backend using React, Gatsby or Bootstrap.',
+      image: require('./assets/images/service-2.svg'),
+    }, 
+    {
+      title: 'Bots',
+      description: 'Do you need your social media account automated? I build Twitter, Facebook and Telegram bots.',
+      image: require('./assets/images/chatbots2.webp'),
+    },
+    {
+      title: 'Mpesa Integration',
+      description: 'I integrate mpesa paybill with platforms to automate payment process.',
+      image: require('./assets/images/mpesa-logo.webp'),
+    },
+    
+  ]
+}
+
 export {
   greeting,
   socialMediaLinks,
@@ -222,4 +250,5 @@ export {
   podcastSection,
   contactInfo,
   twitterDetails,
+  servicesSection
 }
