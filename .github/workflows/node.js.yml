@@ -1,4 +1,7 @@
 name: Build and Deploy
+env:
+  CI: false
+  GATSBY_GITHUB_TOKEN: ${{ secrets.OPEN_SOURCE_TOKEN }}
 on:
   push:
     branches:
