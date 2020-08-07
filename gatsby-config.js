@@ -1,4 +1,4 @@
-require('dotenv').config()
+require("dotenv").config()
 module.exports = {
   siteMetadata: {
     title: `James Muriithi`,
@@ -10,7 +10,7 @@ module.exports = {
     headline: `James Muriithi`,
     twitter: `@jam_es_muriithi`,
     facebook: `james-muriithi`,
-    banner: `/me-icon.jpg`
+    banner: `/me-icon.jpg`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -50,7 +50,7 @@ module.exports = {
       options: {
         precachePages: [`/`],
       },
-    }
+    },
   ],
 }
 

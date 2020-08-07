@@ -1,7 +1,6 @@
-# Software Developer Folio ⚡️ [![GitHub](https://img.shields.io/github/license/saadpasta/developer-portfolio?color=blue)](https://github.com/saadpasta/developerFolio/blob/master/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/saadpasta/developerFolio)](https://github.com/saadpasta/developerFolio/stargazers)  [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors) 
+# Software Developer Folio ⚡️ [![GitHub](https://img.shields.io/github/license/saadpasta/developer-portfolio?color=blue)](https://github.com/saadpasta/developerFolio/blob/master/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/saadpasta/developerFolio)](https://github.com/saadpasta/developerFolio/stargazers) [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 
 ## A clean, beautiful and responsive portfolio template for Developers!
-
 
 <p align="center"> 
   <kbd>
@@ -9,16 +8,14 @@
   </kbd>
 </p>
 
-
 Just change `src/portfolio.js` to get your personal portfolio . Feel free to use it as-is or customize it as much as you want.
 
 But if you want to **contribute** and make this much better for other developer have a look at [Issues](https://github.com/saadpasta/developerFolio/issues).
 
-
 If you created something awesome and want to contribute then feel free to open Please don't hesitate to open an [pull request](https://github.com/saadpasta/developerFolio/pulls).
 
+## Sections
 
-## Sections 
 ✔️ Summary and About me\
 ✔️ Skills\
 ✔️ Work Experience\
@@ -34,7 +31,6 @@ If you created something awesome and want to contribute then feel free to open P
 
 To view a live example, **[click here](https://developerfolio.js.org/)**
 
-
 ## Getting Started 🚀
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -46,13 +42,13 @@ node@v10.16.0 or higher
 npm@6.9.0 or higher
 git@2.17.1 or higher
 ```
-### Docker Commands 
+
+### Docker Commands
 
 ```
 1) BUILD IMAGE : docker build -t developerfolio:latest .
 2) RUN IMAGE: docker run -p 3000:3000 developerfolio:latest
 ```
-
 
 ## How To Use 🔧
 
@@ -71,6 +67,7 @@ $ npm install
 #Start's development server
 $ npm start
 ```
+
 ## Github Setup For Open Source Projects
 
 Generate a Github personal access token using these [Instructions](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) `Make sure you don't select any scope just generate a simple token`
@@ -128,9 +125,9 @@ const skillsSection = { .... }
 
 const techStack = { .... }
 
-const workExperience = { .... } 
+const workExperience = { .... }
 
-const openSource = { .... } 
+const openSource = { .... }
 
 const bigProjects = { .... }
 
@@ -149,16 +146,19 @@ const twitterDetails = { ... }
 For adding emoji 😃 into the texts in `Portfolio.js`, use the `emoji()` function and pass the text you need as an argument. This would help in keeping emojis compatible across different browsers and platforms.
 
 #### Adding Twitter Time line to your Page
+
 Insert your Twitter username in `portfolio.js` to show your recent activity on your page.
 
 ```javascript
 const twitterDetails = {
-  userName : "Your Twitter Username"
-};
+  userName: "Your Twitter Username",
+}
 ```
+
 Note: Don't use `@` symbol when adding username.
 
-## Deployment 📦 
+## Deployment 📦
+
 When you are done with the setup, you should host your website online.
 We highly recommend to read through the [Deploying on Github Pages](https://create-react-app.dev/docs/deployment/#github-pages) docs for React.
 
@@ -166,9 +166,9 @@ We highly recommend to read through the [Deploying on Github Pages](https://crea
 
 This section guides you to deploy your portfolio on Github pages.
 
-- Navigate to `package.json` and enter your domain name instead of `https://developerfolio.js.org/` in `homepage` variable. For example, if you want your site to be `https://<your-username>.github.io/developerFolio`, add the same to the homepage section of `package.json`. 
+- Navigate to `package.json` and enter your domain name instead of `https://developerfolio.js.org/` in `homepage` variable. For example, if you want your site to be `https://<your-username>.github.io/developerFolio`, add the same to the homepage section of `package.json`.
 
-- In short you can also add `/devloperFolio` to `package.json` as both are exactly same. Upon doing so, you tell `create-react-app` to add the path assets accordingly. 
+- In short you can also add `/devloperFolio` to `package.json` as both are exactly same. Upon doing so, you tell `create-react-app` to add the path assets accordingly.
 
 - Optionally, configure the domain. You can configure a custom domain with GitHub Pages by adding a `CNAME` file to the `public/` folder.
 
@@ -182,27 +182,26 @@ You could also host directly with Netlify by linking your own repository.
 
 For more information, read [hosting on Netlify](https://create-react-app.dev/docs/deployment/#netlify).
 
-
 ## Technologies used 🛠️
 
 - [React](https://reactjs.org/)
-- [graphql](https://graphql.org/) 
-- [apollo-boost](https://www.apollographql.com/docs/react/get-started/) 
+- [graphql](https://graphql.org/)
+- [apollo-boost](https://www.apollographql.com/docs/react/get-started/)
 - [react-twitter-embed](https://github.com/saurabhnemade/react-twitter-embed)
 - [react-easy-emoji](https://github.com/appfigures/react-easy-emoji)
 - [axios](https://github.com/axios/axios)
 - [color-thief](https://github.com/lokesh/color-thief)
 
 ## Illustrations
+
 - [UnDraw](https://undraw.co/illustrations)
 
 ## License 📄
 
 This project is licensed under the GPL-3.0 License - see the [LICENSE](./LICENSE) file for details
 
+## For the Future
 
-
-## For the Future 
 If you can help us with these. Please don't hesitate to open a [pull request](https://github.com/saadpasta/developerFolio/pulls).
 
 - Connect with LinkedIn to get Summary, Skills, Education and Experience
@@ -260,7 +259,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ---
-

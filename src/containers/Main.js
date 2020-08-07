@@ -1,14 +1,16 @@
-import React, { Component } from "react";
-import loadable from '@loadable/component'
-import Header from "../components/header/Header";
-import Greeting from "./greeting/Greeting";
-import Footer from "../components/footer/Footer";
-import Top from "./topbutton/Top";
+import React, { Component } from "react"
+import loadable from "@loadable/component"
+import Header from "../components/header/Header"
+import Greeting from "./greeting/Greeting"
+import Footer from "../components/footer/Footer"
+import Top from "./topbutton/Top"
 const Skills = loadable(() => import("./skills/Skills"))
 const StackProgress = loadable(() => import("./skillProgress/skillProgress"))
 const WorkExperience = loadable(() => import("./workExperience/WorkExperience"))
 const Projects = loadable(() => import("./projects/Projects"))
-const StartupProject = loadable(() => import("./StartupProjects/StartupProject"))
+const StartupProject = loadable(() =>
+  import("./StartupProjects/StartupProject")
+)
 const Achievement = loadable(() => import("./achievement/Achievement"))
 const Profile = loadable(() => import("./profile/Profile"))
 export default class Main extends Component {
@@ -25,8 +27,8 @@ export default class Main extends Component {
         <StartupProject />
         <Achievement />
         <Profile />
-        <Footer />        
+        <Footer />
       </div>
-    );
+    )
   }
 }
