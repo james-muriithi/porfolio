@@ -1,5 +1,5 @@
 .meter {
-    height: 20px;
+    height: 10px;
     position: relative;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -13,13 +13,21 @@
     border-bottom-right-radius: 6px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: #8680ff;
+    background-color: rgb(108, 108, 229);
     position: relative;
     overflow: hidden;
 }
 
 .skill {
     line-height: 3.5vw;
+}
+
+.skill-info {
+    display: flex;
+}
+
+.skill-info>p.float-right {
+    margin-left: auto;
 }
 
 .skill-bars {

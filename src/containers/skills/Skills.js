@@ -3,10 +3,17 @@ import "./Skills.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { skillsSection } from "../../portfolio";
 import {Fade} from "react-reveal";
+import styled from 'styled-components';
+
+const MyDiv = styled.div`
+  padding-top: 40px;
+  @media (max-width: 768px) {
+      padding-top: 10px;
+  }`;
 
 export default function Skills() {
   return (
-    <div className="main" id="skills" style={{paddingTop: "40px"}}>
+    <MyDiv id="skills">
       <div className="skills-main-div">
         <Fade left duration={1000}>
         <div className="skills-image-div">
@@ -26,6 +33,6 @@ export default function Skills() {
         </div>
         </Fade>
       </div>
-    </div>
+    </MyDiv>
   );
 }

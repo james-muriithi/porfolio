@@ -17,7 +17,10 @@ export default function StackProgress() {
                         };
                         return (
                         <div className="skill" key={i}>
-                            <p>{exp.Stack}</p>
+                            <div className="skill-info">
+                                <p style={{fontWeight: 500}}>{exp.Stack}</p>
+                                    <p className='float-right'>{exp.progressPercentage}</p>
+                            </div>
                             <div className="meter">
                                 <span style={progressStyle}></span>
                             </div>
