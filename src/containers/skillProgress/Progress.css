@@ -9,11 +9,10 @@
 .meter>span {
     display: block;
     height: 100%;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: rgb(108, 108, 229);
     position: relative;
     overflow: hidden;
 }

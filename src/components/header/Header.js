@@ -91,6 +91,9 @@ function Header() {
                 </li>
               )}
               <li>
+                <a href="#serviceSection">Services</a>
+              </li>
+              <li>
                 <a href="#opensource">Open Source</a>
               </li>
               {proj === true && (

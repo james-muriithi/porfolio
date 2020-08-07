@@ -5,6 +5,15 @@ import { Fade } from "react-reveal"
 
 export default function StackProgress() {
   if (techStack.viewSkillBars) {
+    const colorArray = [
+      "#6C6CE5",
+      "#DC62CC",
+      "#FF9476",
+      "#F9F871",
+      "#B0A8DF",
+      "#DF3F46",
+      "#008B6A",
+    ]
     return (
       <Fade bottom duration={1000} distance="20px">
         <div className="skills-container">
@@ -13,6 +22,8 @@ export default function StackProgress() {
             {techStack.experience.map((exp, i) => {
               const progressStyle = {
                 width: exp.progressPercentage,
+                background:
+                  colorArray[Math.floor(Math.random() * colorArray.length)],
               }
               return (
                 <div className="skill" key={i}>
