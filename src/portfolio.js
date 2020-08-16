@@ -171,6 +171,22 @@ const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to false
 }
 
+// some small projects
+const projectsSection = {
+  title: emoji("Projects"),
+  subtitle: "",
+
+  projects: [
+    {
+      title: "Movie Palace",
+      subtitle:
+        "A simple website to show movies and tv shows built with nodejs, express and ejs.",
+      image: require("./assets/images/projects/movie-palace.webp"),
+      url: "https://moviepalace.herokuapp.com/",
+    },
+  ],
+}
+
 // Some Big Projects You have worked with your company
 
 const bigProjects = {
@@ -280,4 +296,5 @@ export {
   contactInfo,
   twitterDetails,
   servicesSection,
+  projectsSection
 }

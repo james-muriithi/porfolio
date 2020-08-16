@@ -1,0 +1,76 @@
+.projects-heading {
+    font-size: 56px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.projects-subtitle {
+    text-transform: uppercase;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+
+.card-image {
+    height: 250px;
+    width: 250px;
+}
+
+.card-title {
+    font-size: 30px;
+    margin: 0px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.certificate-card {
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.certificate-detail-div {
+    text-align: center;
+}
+
+.certificate-image-div {
+    text-align: center;
+}
+
+.projects-cards-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem 1rem;
+}
+
+.certificate-card-footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.certificate-card-footer>p {
+    cursor: pointer;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+/* Media Query */
+
+@media (max-width: 1380px) {
+    .projects-heading {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-heading {
+        font-size: 30px;
+        text-align: center;
+    }
+    .projects-subtitle {
+        font-size: 16px;
+        line-height: normal;
+        text-align: center;
+    }
+}

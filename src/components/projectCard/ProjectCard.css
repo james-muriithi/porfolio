@@ -1,0 +1,44 @@
+.project-card {
+    width: calc(100% / 3);
+}
+
+.project-card .card-image {
+    width: 100%;
+}
+
+.project-card .card-subtitle {
+    font-size: 16px;
+}
+
+.project-detail-div {
+    text-align: center;
+}
+
+.project-card-footer {
+    text-align: center;
+}
+
+.my-project-button {
+    background-color: #a066fb;
+    color: white;
+    justify-content: center;
+    padding: 10px 18px;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media (max-width: 976px) {
+    .project-card {
+        width: calc(100% / 2)
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: auto
+    }
+}

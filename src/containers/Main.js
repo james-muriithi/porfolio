@@ -9,6 +9,7 @@ const StackProgress = loadable(() => import("./skillProgress/skillProgress"))
 const WorkExperience = loadable(() => import("./workExperience/WorkExperience"))
 const Projects = loadable(() => import("./projects/Projects"))
 const Services = loadable(() => import("./services/Services"))
+const MyProjects = loadable(() => import("./myProjects/MyProjects"))
 const StartupProject = loadable(() =>
   import("./StartupProjects/StartupProject")
 )
@@ -25,6 +26,7 @@ export default class Main extends Component {
         <StackProgress />
         <WorkExperience />
         <Services />
+        <MyProjects />
         <Projects />
         <StartupProject />
         <Achievement />
