@@ -7,6 +7,10 @@ import styled from "styled-components"
 const Title = styled.h1`
   font-size: 56px;
   font-weight: 400;
+  @media (max-width: 768px) {
+    font-size: 30px;
+    text-align: center;
+}
 `
 
 const ServiceCards = styled.div`

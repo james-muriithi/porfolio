@@ -123,7 +123,7 @@ const workExperiences = {
     {
       role: "Attachment",
       company: "SwahiliPot Hub",
-      companylogo: require("./assets/images/swahilipotlogo.jpg"),
+      companylogo: require("./assets/images/experiences/swahilipotlogo.jpg"),
       date: "May 2019 – Aug 2019",
       desc:
         "It was a worthwhile experience working at the SwahiliPot Hub. The friendly welcoming staff and the space they have created for a trainee allowed me with ample opportunities to learn and know myself as a worker. These experiences brought out my strength and also the areas I needed to improvise. It added more confidence to my professional approach, built a stronger positive attitude and taught me how to work in a team as a player.",
@@ -133,6 +133,32 @@ const workExperiences = {
         "Holding events/meetups",
       ],
     },
+    {
+      role: 'DSC Co-Lead',
+      company: "DSC Pwani Uni.",
+      companylogo: require("./assets/images/experiences/dsc.png"),
+      date: "2019 – 2020",
+      desc:
+        "Developer Student Clubs is a Google Developers program for university students to learn mobile and web development skills, design thinking skillsand leadership skills.",
+      descBullets: [
+        "I was the web department leader",
+        "Holding events/meetups",
+        "Developed and maintains club website"
+      ],
+    },
+    {
+      role: 'Head of Department',
+      company: "PUCSA Club",
+      companylogo: require("./assets/images/experiences/pucsa.png"),
+      date: "2019 – 2020",
+      desc:
+        "PUCSA is an innovation club in Pwani University where by the students get a platform to learn, present their ideas and innovative thoughts and also engage in field work activities and events. The club not only offers resources like learning materials but also boosts their budding ideas by converting them into invention of something substantial. It also creates a social environment where students with various technology experiences come together and share information with one another.",
+      descBullets: [
+        "I was the web department leader",
+        "Holding events/meetups",
+        "Developed and maintains club website"
+      ],
+    }
   ],
 }
 
@@ -153,12 +179,12 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: "https://drive.google.com/uc?id=1exWn9T6j8TsfDDHJnS3VR66eP6RiGAfY",
+      image: require('./assets/images/big-projects/brance.png'),
       link: "https://brancetech.com/",
     },
     {
-      image: "https://drive.google.com/uc?id=1MXoXcQRK-pH8J82wyjCW4SJk5AxJe7tf",
-      link: "http://nextu.se/",
+      image: require('./assets/images/big-projects/indexfand.png'),
+      link: "http://indexfand.com/",
     },
   ],
 }
@@ -174,7 +200,7 @@ const achievementSection = {
       title: "PWA Web App Developer",
       subtitle:
         "Completed Certifcation from PluralSight for PWA Web App Development",
-      image: require("./assets/images/pwa-logo.svg"),
+      image: require("./assets/images/achievements/pwa-logo.svg"),
       footerLink: [
         { name: "Certification", url: "" },
         { name: "Final Project", url: "https://moviepalace.herokuapp.com/" },
@@ -216,25 +242,25 @@ const servicesSection = {
       title: "API design/Integration",
       description:
         "Developing a highly secure, fast and scalable APIs both REST and GraphQL.",
-      image: require("./assets/images/service-1.svg"),
+      image: require("./assets/images/services/service-1.svg"),
     },
     {
       title: "Web Development",
       description:
         "Get a blazing fast front-end for your backend using React, Gatsby or Bootstrap.",
-      image: require("./assets/images/service-2.svg"),
+      image: require("./assets/images/services/service-2.svg"),
     },
     {
       title: "Bots",
       description:
         "Do you need your social media account automated? I build Twitter, Facebook and Telegram bots.",
-      image: require("./assets/images/chatbots2.webp"),
+      image: require("./assets/images/services/chatbots2.webp"),
     },
     {
       title: "Mpesa Integration",
       description:
         "I integrate mpesa paybill with platforms to automate payment process.",
-      image: require("./assets/images/mpesa-logo.webp"),
+      image: require("./assets/images/services/mpesa-logo.webp"),
     },
   ],
 }
