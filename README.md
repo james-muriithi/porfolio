@@ -1,4 +1,5 @@
 # Software Developer Folio ⚡️ [![GitHub license](https://img.shields.io/github/license/james-muriithi/developerFolio?color=blue)](https://github.com/james-muriithi/developerFolio/blob/master/LICENSE) [![GitHub forks](https://img.shields.io/github/forks/james-muriithi/developerFolio)](https://github.com/james-muriithi/developerFolio/network) [![GitHub stars](https://img.shields.io/github/stars/james-muriithi/developerFolio)](https://github.com/james-muriithi/developerFolio/stargazers) [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors) ![Build and Deploy](https://github.com/james-muriithi/developerFolio/workflows/Build%20and%20Deploy/badge.svg)
+
 ## A clean, beautiful and responsive portfolio template for Developers!
 
 <p align="center"> 

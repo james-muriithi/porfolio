@@ -134,7 +134,7 @@ const workExperiences = {
       ],
     },
     {
-      role: 'DSC Co-Lead',
+      role: "DSC Co-Lead",
       company: "DSC Pwani Uni.",
       companylogo: require("./assets/images/experiences/dsc.png"),
       date: "2019 – 2020",
@@ -143,11 +143,11 @@ const workExperiences = {
       descBullets: [
         "I was the web department leader",
         "Holding events/meetups",
-        "Developed and maintains club website"
+        "Developed and maintains club website",
       ],
     },
     {
-      role: 'Head of Department',
+      role: "Head of Department",
       company: "PUCSA Club",
       companylogo: require("./assets/images/experiences/pucsa.png"),
       date: "2019 – 2020",
@@ -156,9 +156,9 @@ const workExperiences = {
       descBullets: [
         "I was the web department leader",
         "Holding events/meetups",
-        "Developed and maintains club website"
+        "Developed and maintains club website",
       ],
-    }
+    },
   ],
 }
 
@@ -195,11 +195,11 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require('./assets/images/big-projects/brance.png'),
+      image: require("./assets/images/big-projects/brance.png"),
       link: "https://brancetech.com/",
     },
     {
-      image: require('./assets/images/big-projects/indexfand.png'),
+      image: require("./assets/images/big-projects/indexfand.png"),
       link: "http://indexfand.com/",
     },
   ],
@@ -296,5 +296,5 @@ export {
   contactInfo,
   twitterDetails,
   servicesSection,
-  projectsSection
+  projectsSection,
 }
