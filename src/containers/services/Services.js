@@ -13,7 +13,7 @@ const Title = styled.h1`
   }
   @media (max-width: 1380px) {
     font-size: 40px;
-}
+  }
 `
 
 const ServiceCards = styled.div`

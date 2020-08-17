@@ -190,7 +190,7 @@ const projectsSection = {
         "A simple music player (PWA) for local audio files built with gatsabyjs, redux and react.",
       image: require("./assets/images/projects/music-app.webp"),
       url: "https://music-app123.firebaseapp.com/",
-    }, 
+    },
     {
       title: "E-Shop",
       subtitle:
