@@ -94,7 +94,7 @@ function Header() {
                 <a href="#serviceSection">Services</a>
               </li>
               <li>
-                <a href="#opensource">Open Source</a>
+                <a href="#projects">Projects</a>
               </li>
               {proj === true && (
                 <li>

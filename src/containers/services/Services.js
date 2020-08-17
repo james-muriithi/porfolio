@@ -11,6 +11,9 @@ const Title = styled.h1`
     font-size: 30px;
     text-align: center;
   }
+  @media (max-width: 1380px) {
+    font-size: 40px;
+}
 `
 
 const ServiceCards = styled.div`

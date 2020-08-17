@@ -180,9 +180,44 @@ const projectsSection = {
     {
       title: "Movie Palace",
       subtitle:
-        "A simple website to show movies and tv shows built with nodejs, express and ejs.",
+        "A simple website (PWA) to show movies and tv shows built with nodejs, express and ejs.",
       image: require("./assets/images/projects/movie-palace.webp"),
       url: "https://moviepalace.herokuapp.com/",
+    },
+    {
+      title: "Music App",
+      subtitle:
+        "A simple music player (PWA) for local audio files built with gatsabyjs, redux and react.",
+      image: require("./assets/images/projects/music-app.webp"),
+      url: "https://music-app123.firebaseapp.com/",
+    }, 
+    {
+      title: "E-Shop",
+      subtitle:
+        "An online ecommerce shop built with gatsabyjs, redux and react.",
+      image: require("./assets/images/projects/e-shop.webp"),
+      url: "https://my-online-shop.netlify.app",
+    },
+    {
+      title: "Indexfand",
+      subtitle:
+        "Indexfand is a personal and peer savings and payment platform running on a private blockchain network.",
+      image: require("./assets/images/projects/indexfand.webp"),
+      url: "https://indexfand.com",
+    },
+    {
+      title: "DSC-PU",
+      subtitle:
+        "This is a club website (PWA) which incoporates push notifications to notify users on upcoming events.",
+      image: require("./assets/images/projects/dsc-pu.webp"),
+      url: "https://dsc-pwani.firebaseapp.com",
+    },
+    {
+      title: "Weather App",
+      subtitle:
+        "A wetaher web app (PWA) that lets you know the weather of a place or current geolocation.",
+      image: require("./assets/images/projects/weather-app.webp"),
+      url: "https://reactweather-app.netlify.app",
     },
   ],
 }
