@@ -9,10 +9,10 @@ const greeting = {
   username: "James Muriithi",
   title: "Hi there, I'm James",
   subTitle: emoji(
-    "A passionate Software Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / PHP and some other cool libraries and frameworks."
+    "A passionate Software Developer having an experience of building Web applications with PHP / Laravel / Vue / Reactjs / Nodejs and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/13s87SR6sSPCCMS-aX3qkGoS7HuC72Rbt/view?usp=sharing",
+    "https://drive.google.com/file/d/1Z3BqzyHVmEA5SjlUMa9Vv-lSXeCiKjDY/view?usp=sharing",
 }
 
 // Your Social Media Link
@@ -32,11 +32,14 @@ const skillsSection = {
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Develop highly interactive Front end / User Interfaces for your web applications"
     ),
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
       "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+    ),
+    emoji(
+      "⚡ Integration of payment services such as M-Pesa and paypal"
     ),
   ],
 
@@ -44,6 +47,10 @@ const skillsSection = {
     https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
+    {
+      skillName: 'Laravel',
+      fontAwesomeClassname:'fab fa-laravel'
+    },
     {
       skillName: "html-5",
       fontAwesomeClassname: "fab fa-html5",
@@ -84,6 +91,10 @@ const skillsSection = {
       skillName: "java",
       fontAwesomeClassname: "fab fa-java",
     },
+    {
+      skillName: 'Vue',
+      fontAwesomeClassname:'fab fa-vuejs'
+    },
   ],
 }
 
@@ -101,8 +112,16 @@ const techStack = {
       progressPercentage: "90%",
     },
     {
+      Stack: "Laravel",
+      progressPercentage: "80%",
+    },
+    {
       Stack: "React",
       progressPercentage: "40%",
+    },
+    {
+      Stack: "Vue",
+      progressPercentage: "30%",
     },
     {
       Stack: "NodeJs",
@@ -120,6 +139,18 @@ const techStack = {
 const workExperiences = {
   viewExperiences: true, //Set it to true to show workExperiences Section
   experience: [
+    // {
+    //   role: "PHP Intern",
+    //   company: "DTA",
+    //   companylogo: "https://res.cloudinary.com/james-m/image/upload/f_webp/v1616101308/dta_g3kpl9.png",
+    //   date: "Aug 2020 – Sept 2020",
+    //   desc:
+    //     "I was introduced to laravel PHP framework and have since advanced .",
+    //   descBullets: [
+    //     "Learnt Laravel",
+
+    //   ],
+    // },
     {
       role: "Attachment",
       company: "SwahiliPot Hub",
@@ -175,14 +206,41 @@ const openSource = {
 const projectsSection = {
   title: emoji("Projects"),
   subtitle: "",
-
   projects: [
+    {
+      title: "Schemaq High School",
+      subtitle:
+        "A school management system for a high school lacated in Nyali, Mombasa.",
+      image: "https://res.cloudinary.com/james-m/image/upload/ar_16:9,c_fill,e_sharpen,f_webp,g_auto,w_1000/v1616098723/theschemaqhigh-co-ke_spnjqx.png",
+      url: "https://theschemaqhigh.co.ke/",
+    },
+    {
+      title: "Lokomarket",
+      subtitle:
+        "A platform where people buy and sell products and services online.",
+      image: "https://res.cloudinary.com/james-m/image/upload/ar_16:9,c_fill,e_sharpen,f_webp,g_auto,w_1000/v1616099485/lokomarket_wroyze.png",
+      url: "https://lokomarket.co.ke/",
+    },
     {
       title: "Movie Palace",
       subtitle:
         "A simple website (PWA) to show movies and tv shows built with nodejs, express and ejs.",
       image: require("./assets/images/projects/movie-palace.webp"),
       url: "https://moviepalace.herokuapp.com/",
+    },
+    {
+      title: "Coding Jobs",
+      subtitle:
+        "A twitter bot that finds developer (ICT) jobs off the internet and post them on twitter.",
+      image: "https://res.cloudinary.com/james-m/image/upload/ar_16:9,c_fill,e_sharpen,f_webp,g_auto,w_1000/v1616099874/coding_jobs_gpe2dz.png",
+      url: "https://twitter.com/coding_jobs_ke",
+    },
+    {
+      title: "FYPMS",
+      subtitle:
+        "FYPMS (Final Year Project Management System), my final year project that manages final year projects.",
+      image: "https://res.cloudinary.com/james-m/image/upload/f_webp/v1616100352/fypms_g1te4p.png",
+      url: "https://fypms.oyaa.co.ke",
     },
     {
       title: "Music App",
@@ -212,13 +270,13 @@ const projectsSection = {
       image: require("./assets/images/projects/dsc-pu.webp"),
       url: "https://dsc-pwani.firebaseapp.com",
     },
-    {
-      title: "Weather App",
-      subtitle:
-        "A wetaher web app (PWA) that lets you know the weather of a place or current geolocation.",
-      image: require("./assets/images/projects/weather-app.webp"),
-      url: "https://reactweather-app.netlify.app",
-    },
+    // {
+    //   title: "Weather App",
+    //   subtitle:
+    //     "A wetaher web app (PWA) that lets you know the weather of a place or current geolocation.",
+    //   image: require("./assets/images/projects/weather-app.webp"),
+    //   url: "https://reactweather-app.netlify.app",
+    // },
   ],
 }
 
