@@ -1,12 +1,12 @@
 import React from "react"
 import { projectsSection } from "../../portfolio"
-import { Fade } from "react-reveal"
+// import { Fade } from "react-reveal"
 import ProjectCard from "../../components/projectCard/ProjectCard"
 import "./MyProjects.css"
 
 export default function MyProjects() {
   return (
-    <Fade bottom duration={1000} distance="20px">
+    // <Fade bottom duration={1000} distance="20px">
       <div className="main" id="projects" style={{ paddingTop: "100px" }}>
         <div className="projects-main-div">
           <div className="projects-header">
@@ -32,6 +32,6 @@ export default function MyProjects() {
           </div>
         </div>
       </div>
-    </Fade>
+    // </Fade>
   )
 }
