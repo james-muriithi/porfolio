@@ -48,12 +48,11 @@
     flex-wrap: wrap;
 }
 
-.certificate-card-footer>p {
+.certificate-card-footer > p {
     cursor: pointer;
     margin-right: 10px;
     text-align: center;
 }
-
 
 /* Media Query */
 

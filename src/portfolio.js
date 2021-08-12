@@ -9,10 +9,10 @@ const greeting = {
   username: "James Muriithi",
   title: "Hi there, I'm James",
   subTitle: emoji(
-    "A passionate Software Developer having an experience of building Web applications with PHP / Laravel / Vue / Reactjs / Nodejs and some other cool libraries and frameworks."
+    "A passionate Software Developer having an experience of building Web applications with PHP / Laravel / Vue / Nuxt / Reactjs / Nodejs and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1Z3BqzyHVmEA5SjlUMa9Vv-lSXeCiKjDY/view?usp=sharing",
+    "https://drive.google.com/file/d/1k0tww_P1v_D-Yabji3v6K1UK9wEzT_aa/view?usp=sharing",
 }
 
 // Your Social Media Link
@@ -117,11 +117,15 @@ const techStack = {
     },
     {
       Stack: "React",
-      progressPercentage: "40%",
+      progressPercentage: "50%",
     },
     {
       Stack: "Vue",
-      progressPercentage: "30%",
+      progressPercentage: "60%",
+    },
+    {
+      Stack: "Nuxt",
+      progressPercentage: "60%",
     },
     {
       Stack: "NodeJs",
@@ -139,18 +143,22 @@ const techStack = {
 const workExperiences = {
   viewExperiences: true, //Set it to true to show workExperiences Section
   experience: [
-    // {
-    //   role: "PHP Intern",
-    //   company: "DTA",
-    //   companylogo: "https://res.cloudinary.com/james-m/image/upload/f_webp/v1616101308/dta_g3kpl9.png",
-    //   date: "Aug 2020 – Sept 2020",
-    //   desc:
-    //     "I was introduced to laravel PHP framework and have since advanced .",
-    //   descBullets: [
-    //     "Learnt Laravel",
-
-    //   ],
-    // },
+    {
+      role: "Fullstack Developer",
+      company: "Brance Technologies",
+      companylogo: "https://res.cloudinary.com/james-m/image/upload/f_webp/v1616101308/1626649573724_pzqqrg.jpg",
+      date: "Sept 2020 – June 2021",
+      desc:
+        "My tasks at Brance included",
+      descBullets: [
+        "Developing front-end and backe-end architecture.",
+        "Creating servers and databases for functionality.",
+        "Ensuring cross-platform optimization for mobile phones.",
+        "Ensuring responsiveness of applications.",
+        "Designing and developing APIs.",
+        "Staying abreast of developments in web applications and programming languages.",
+      ],
+    },
     {
       role: "Attachment",
       company: "SwahiliPot Hub",
@@ -177,19 +185,19 @@ const workExperiences = {
         "Developed and maintains club website",
       ],
     },
-    {
-      role: "Head of Department",
-      company: "PUCSA Club",
-      companylogo: require("./assets/images/experiences/pucsa.png"),
-      date: "2019 – 2020",
-      desc:
-        "PUCSA is an innovation club in Pwani University where by the students get a platform to learn, present their ideas and innovative thoughts and also engage in field work activities and events. The club not only offers resources like learning materials but also boosts their budding ideas by converting them into invention of something substantial. It also creates a social environment where students with various technology experiences come together and share information with one another.",
-      descBullets: [
-        "I was the web department leader",
-        "Holding events/meetups",
-        "Developed and maintains club website",
-      ],
-    },
+    // {
+    //   role: "Head of Department",
+    //   company: "PUCSA Club",
+    //   companylogo: require("./assets/images/experiences/pucsa.png"),
+    //   date: "2019 – 2020",
+    //   desc:
+    //     "PUCSA is an innovation club in Pwani University where by the students get a platform to learn, present their ideas and innovative thoughts and also engage in field work activities and events. The club not only offers resources like learning materials but also boosts their budding ideas by converting them into invention of something substantial. It also creates a social environment where students with various technology experiences come together and share information with one another.",
+    //   descBullets: [
+    //     "I was the web department leader",
+    //     "Holding events/meetups",
+    //     "Developed and maintains club website",
+    //   ],
+    // },
   ],
 }
 
@@ -208,11 +216,11 @@ const projectsSection = {
   subtitle: "",
   projects: [
     {
-      title: "Schemaq High School",
+      title: "My Bus",
       subtitle:
-        "A school management system for a high school lacated in Nyali, Mombasa.",
-      image: "https://res.cloudinary.com/james-m/image/upload/ar_16:9,c_fill,e_sharpen,f_webp,g_auto,w_1000/v1616098723/theschemaqhigh-co-ke_spnjqx.png",
-      url: "https://theschemaqhigh.co.ke/",
+        "A Bus reservation system am currently working on. Login credentials are  email: admin@admin.com pasword: password",
+      image: "https://res.cloudinary.com/james-m/image/upload/ar_16:9,c_fill,e_sharpen,f_webp,g_auto,w_1000/v1616099485/screenshot3_oucawy.png",
+      url: "https://mybus.theschemaqhigh.co.ke/login",
     },
     {
       title: "Lokomarket",
@@ -231,16 +239,16 @@ const projectsSection = {
     {
       title: "Coding Jobs",
       subtitle:
-        "A twitter bot that finds developer (ICT) jobs off the internet and post them on twitter.",
+        "A twitter bot that finds developer (IT) jobs off the internet and post them on twitter.",
       image: "https://res.cloudinary.com/james-m/image/upload/ar_16:9,c_fill,e_sharpen,f_webp,g_auto,w_1000/v1616099874/coding_jobs_gpe2dz.png",
       url: "https://twitter.com/coding_jobs_ke",
     },
     {
-      title: "FYPMS",
+      title: "Ecomart",
       subtitle:
-        "FYPMS (Final Year Project Management System), my final year project that manages final year projects.",
-      image: "https://res.cloudinary.com/james-m/image/upload/f_webp/v1616100352/fypms_g1te4p.png",
-      url: "https://fypms.oyaa.co.ke",
+        "An online shop website built with vuejs.",
+      image: "https://res.cloudinary.com/james-m/image/upload/f_webp/v1616100352/screenshot_adcbh2.png",
+      url: "https://e-comart.web.app/",
     },
     {
       title: "Music App",
@@ -263,13 +271,20 @@ const projectsSection = {
       image: require("./assets/images/projects/indexfand.webp"),
       url: "https://indexfand.com",
     },
-    {
-      title: "DSC-PU",
-      subtitle:
-        "This is a club website (PWA) which incoporates push notifications to notify users on upcoming events.",
-      image: require("./assets/images/projects/dsc-pu.webp"),
-      url: "https://dsc-pwani.firebaseapp.com",
-    },
+    // {
+    //   title: "Schemaq High School",
+    //   subtitle:
+    //     "A school management system for a high school lacated in Nyali, Mombasa.",
+    //   image: "https://res.cloudinary.com/james-m/image/upload/ar_16:9,c_fill,e_sharpen,f_webp,g_auto,w_1000/v1616098723/theschemaqhigh-co-ke_spnjqx.png",
+    //   url: "https://theschemaqhigh.co.ke/",
+    // },
+    // {
+    //   title: "DSC-PU",
+    //   subtitle:
+    //     "This is a club website (PWA) which incoporates push notifications to notify users on upcoming events.",
+    //   image: require("./assets/images/projects/dsc-pu.webp"),
+    //   url: "https://dsc-pwani.firebaseapp.com",
+    // },
     // {
     //   title: "Weather App",
     //   subtitle:
@@ -306,12 +321,32 @@ const achievementSection = {
 
   achivementsCards: [
     {
+      title: "Vue.js",
+      subtitle:
+        "Vue.js Certifcation from Udemy",
+      image: "https://vuejs.org/images/logo.svg",
+      footerLink: [
+        { name: "Certification", url: "https://udemy-certificate.s3.amazonaws.com/image/UC-f07c35a2-1b10-47fa-8ba1-5a3fac7ccf9b.jpg?v=1621659397000" },
+        { name: "Final Project", url: "https://e-comart.web.app/" },
+      ],
+    },
+    {
+      title: "Nuxt.js",
+      subtitle:
+        "Nuuxt.js Certifcation from Udemy",
+      image: "https://nuxtjs.org/logos/nuxt.svg",
+      footerLink: [
+        { name: "Certification", url: "https://udemy-certificate.s3.amazonaws.com/image/UC-90883265-7806-4a01-a253-8dcddf655347.jpg?v=1622667311000" },
+        { name: "Final Project", url: "http://goflix-tv.herokuapp.com/" },
+      ],
+    },
+    {
       title: "PWA Web App Developer",
       subtitle:
         "Completed Certifcation from PluralSight for PWA Web App Development",
       image: require("./assets/images/achievements/pwa-logo.svg"),
       footerLink: [
-        { name: "Certification", url: "" },
+        { name: "Certification", url: "#" },
         { name: "Final Project", url: "https://moviepalace.herokuapp.com/" },
       ],
     },

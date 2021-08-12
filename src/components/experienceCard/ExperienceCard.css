@@ -123,7 +123,7 @@
 
 @media (max-width: 976px) {
     .experience-card {
-        width: calc(100% / 2)
+        width: calc(100% - 10px)
     }
 }
 

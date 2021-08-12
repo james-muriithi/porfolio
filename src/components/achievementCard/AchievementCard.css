@@ -1,5 +1,5 @@
 .certificate-card {
-    width: calc(100% / 3)
+    width: calc(100% - 50px)
 }
 
 .certificate-card .card-subtitle {
@@ -8,7 +8,7 @@
 
 @media (max-width: 976px) {
     .certificate-card {
-        width: calc(100% / 2)
+        width: calc(100% - 70px)
     }
 }
 
