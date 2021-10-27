@@ -121,7 +121,7 @@ const techStack = {
     },
     {
       Stack: "Vue",
-      progressPercentage: "60%",
+      progressPercentage: "80%",
     },
     {
       Stack: "Nuxt",
@@ -216,6 +216,13 @@ const projectsSection = {
   subtitle: "",
   projects: [
     {
+      title: "Music Cloud",
+      subtitle:
+        "A music app that consumes apple music API and Genius lyrics Api, built with Vue, Vuex, Vue Router and Vuetify.",
+      image: "https://res.cloudinary.com/james-m/image/upload/f_webp/v1635354996/Screenshot_from_2021-10-27_20-15-33_nqzou2.png",
+      url: "https://musik-cloud.netlify.app/",
+    },
+    {
       title: "My Bus",
       subtitle:
         "A Bus reservation system am currently working on. Login credentials are  email: admin@admin.com pasword: password",
@@ -250,13 +257,13 @@ const projectsSection = {
       image: "https://res.cloudinary.com/james-m/image/upload/f_webp/v1616100352/screenshot_adcbh2.png",
       url: "https://e-comart.web.app/",
     },
-    {
-      title: "Music App",
-      subtitle:
-        "A simple music player (PWA) for local audio files built with gatsabyjs, redux and react.",
-      image: require("./assets/images/projects/music-app.webp"),
-      url: "https://music-app123.firebaseapp.com/",
-    },
+    // {
+    //   title: "Music App",
+    //   subtitle:
+    //     "A simple music player (PWA) for local audio files built with gatsabyjs, redux and react.",
+    //   image: require("./assets/images/projects/music-app.webp"),
+    //   url: "https://music-app123.firebaseapp.com/",
+    // },
     {
       title: "E-Shop",
       subtitle:
@@ -334,7 +341,7 @@ const achievementSection = {
       title: "Nuxt.js",
       subtitle:
         "Nuuxt.js Certifcation from Udemy",
-      image: "https://nuxtjs.org/logos/nuxt.svg",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/312px-Nuxt_logo.svg.png",
       footerLink: [
         { name: "Certification", url: "https://udemy-certificate.s3.amazonaws.com/image/UC-90883265-7806-4a01-a253-8dcddf655347.jpg?v=1622667311000" },
         { name: "Final Project", url: "http://goflix-tv.herokuapp.com/" },
