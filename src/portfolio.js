@@ -9,10 +9,10 @@ const greeting = {
   username: "James Muriithi",
   title: "Hi there, I'm James",
   subTitle: emoji(
-    "A passionate Software Developer having an experience of building Web applications with PHP / Laravel / Vue / Nuxt / Reactjs / Nodejs and some other cool libraries and frameworks."
+    "Fullstack Developer — Frontend heavy with vue.js, angular, react, node, PHP and python"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1k0tww_P1v_D-Yabji3v6K1UK9wEzT_aa/view?usp=sharing",
+    "https://drive.google.com/file/d/1qsD6ObPScQQ0XAfbB7XdEq5tKZG1__A-/view?usp=sharing",
 }
 
 // Your Social Media Link
@@ -29,7 +29,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What i do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "AMBITIOUS FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web applications"
@@ -48,32 +48,20 @@ const skillsSection = {
 
   softwareSkills: [
     {
-      skillName: 'Laravel',
-      fontAwesomeClassname:'fab fa-laravel'
+      skillName: 'Vue',
+      fontAwesomeClassname:'fab fa-vuejs'
     },
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5",
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt",
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js",
+      skillName: 'Angular',
+      fontAwesomeClassname:'fab fa-angular'
     },
     {
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react",
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node",
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database",
+      skillName: 'Laravel',
+      fontAwesomeClassname:'fab fa-laravel'
     },
     {
       skillName: "php",
@@ -88,12 +76,24 @@ const skillsSection = {
       fontAwesomeClassname: "fab fa-python",
     },
     {
-      skillName: "java",
-      fontAwesomeClassname: "fab fa-java",
+      skillName: "html-5",
+      fontAwesomeClassname: "fab fa-html5",
     },
     {
-      skillName: 'Vue',
-      fontAwesomeClassname:'fab fa-vuejs'
+      skillName: "css3",
+      fontAwesomeClassname: "fab fa-css3-alt",
+    },
+    {
+      skillName: "JavaScript",
+      fontAwesomeClassname: "fab fa-js",
+    },
+    {
+      skillName: "nodejs",
+      fontAwesomeClassname: "fab fa-node",
+    },
+    {
+      skillName: "sql-database",
+      fontAwesomeClassname: "fas fa-database",
     },
   ],
 }
@@ -104,12 +104,8 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend", //Insert stack or technology you have experience in
-      progressPercentage: "85%", //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "90%",
+      Stack: "Vue",
+      progressPercentage: "85%",
     },
     {
       Stack: "Laravel",
@@ -120,12 +116,12 @@ const techStack = {
       progressPercentage: "50%",
     },
     {
-      Stack: "Vue",
-      progressPercentage: "80%",
+      Stack: "Nuxt",
+      progressPercentage: "50%",
     },
     {
-      Stack: "Nuxt",
-      progressPercentage: "60%",
+      Stack: "Python",
+      progressPercentage: "70%",
     },
     {
       Stack: "NodeJs",
@@ -145,59 +141,47 @@ const workExperiences = {
   experience: [
     {
       role: "Fullstack Developer",
+      company: "Talentator",
+      companylogo: "https://media-exp1.licdn.com/dms/image/C560BAQFoevNgyIFTjg/company-logo_100_100/0/1648716599843?e=1661385600&v=beta&t=WccrgCtraxI4sq_gcOPXFi2uN9bfOaQR4D4x7P31W5M",
+      date: "Jan 2021 – Present",
+      desc:
+        "Roles and responsibilities",
+      descBullets: [
+        "Develop and implement the company's web application using Vuejs and serveless API using cloud functions",
+        "Develop new features and infrastructure development in support of rapidly emerging business and project requirements",
+        "Ensure application performance, uptime, and scale, maintaining high standards of code quality and thoughtful application design",
+        "Work with agile development methodologies, adhering to best practices and pursuing continued learning opportunities."
+      ],
+    },
+    {
+      role: "Fullstack Developer",
       company: "Brance Technologies",
       companylogo: "https://res.cloudinary.com/james-m/image/upload/f_webp/v1616101308/1626649573724_pzqqrg.jpg",
-      date: "Sept 2020 – June 2021",
+      date: "Sept 2018 – Nov 2020",
       desc:
         "My tasks at Brance included",
       descBullets: [
-        "Developing front-end and backe-end architecture.",
-        "Creating servers and databases for functionality.",
-        "Ensuring cross-platform optimization for mobile phones.",
-        "Ensuring responsiveness of applications.",
-        "Designing and developing APIs.",
-        "Staying abreast of developments in web applications and programming languages.",
+        "Involved in developing and implementing the web application using Vuejs/Nuxtjs, and RESTful APIs (Laravel and Nodejs+Express)",
+        "Took full service ownership constantly monitoring web transactions, error rates, and data quality to identify, and prioritize problems",
+        "Collaborated with the design team on developing micro-services",
+        "Developed and maintained internal software tools",
+        "Wrote technical documents"
       ],
     },
     {
-      role: "Attachment",
-      company: "SwahiliPot Hub",
-      companylogo: require("./assets/images/experiences/swahilipotlogo.jpg"),
-      date: "May 2019 – Aug 2019",
+      role: "PHP Developer",
+      company: "Digital Tailor Agency",
+      companylogo: require("./assets/images/experiences/dta.jpeg"),
+      date: "Mar 2017 – Aug 2018",
       desc:
-        "It was a worthwhile experience working at the SwahiliPot Hub. The friendly welcoming staff and the space they have created for a trainee allowed me with ample opportunities to learn and know myself as a worker. These experiences brought out my strength and also the areas I needed to improvise. It added more confidence to my professional approach, built a stronger positive attitude and taught me how to work in a team as a player.",
+        "My tasks at DTA were",
       descBullets: [
-        "Installing Wi-Fi access points",
-        "Configuring routers",
-        "Holding events/meetups",
+        "Designed and implemented scalable web services, applications, and APIs using Vuejs and Laravel",
+        "Structured system requirements and suggest a testing and development road-map.",
+        "Set up Continuous Integration Testing and testing to guard against regression of the code base.",
+        "Met with the software development team to define the scope and scale of software projects.",
       ],
     },
-    {
-      role: "DSC Co-Lead",
-      company: "DSC Pwani Uni.",
-      companylogo: require("./assets/images/experiences/dsc.png"),
-      date: "2019 – 2020",
-      desc:
-        "Developer Student Clubs is a Google Developers program for university students to learn mobile and web development skills, design thinking skillsand leadership skills.",
-      descBullets: [
-        "I was the web department leader",
-        "Holding events/meetups",
-        "Developed and maintains club website",
-      ],
-    },
-    // {
-    //   role: "Head of Department",
-    //   company: "PUCSA Club",
-    //   companylogo: require("./assets/images/experiences/pucsa.png"),
-    //   date: "2019 – 2020",
-    //   desc:
-    //     "PUCSA is an innovation club in Pwani University where by the students get a platform to learn, present their ideas and innovative thoughts and also engage in field work activities and events. The club not only offers resources like learning materials but also boosts their budding ideas by converting them into invention of something substantial. It also creates a social environment where students with various technology experiences come together and share information with one another.",
-    //   descBullets: [
-    //     "I was the web department leader",
-    //     "Holding events/meetups",
-    //     "Developed and maintains club website",
-    //   ],
-    // },
   ],
 }
 
@@ -230,13 +214,6 @@ const projectsSection = {
       url: "https://mybus.theschemaqhigh.co.ke/login",
     },
     {
-      title: "Lokomarket",
-      subtitle:
-        "A platform where people buy and sell products and services online.",
-      image: "https://res.cloudinary.com/james-m/image/upload/ar_16:9,c_fill,e_sharpen,f_webp,g_auto,w_1000/v1616099485/lokomarket_wroyze.png",
-      url: "https://lokomarket.co.ke/",
-    },
-    {
       title: "Movie Palace",
       subtitle:
         "A simple website (PWA) to show movies and tv shows built with nodejs, express and ejs.",
@@ -257,13 +234,6 @@ const projectsSection = {
       image: "https://res.cloudinary.com/james-m/image/upload/f_webp/v1616100352/screenshot_adcbh2.png",
       url: "https://e-comart.web.app/",
     },
-    // {
-    //   title: "Music App",
-    //   subtitle:
-    //     "A simple music player (PWA) for local audio files built with gatsabyjs, redux and react.",
-    //   image: require("./assets/images/projects/music-app.webp"),
-    //   url: "https://music-app123.firebaseapp.com/",
-    // },
     {
       title: "E-Shop",
       subtitle:
@@ -278,27 +248,6 @@ const projectsSection = {
       image: require("./assets/images/projects/indexfand.webp"),
       url: "https://indexfand.com",
     },
-    // {
-    //   title: "Schemaq High School",
-    //   subtitle:
-    //     "A school management system for a high school lacated in Nyali, Mombasa.",
-    //   image: "https://res.cloudinary.com/james-m/image/upload/ar_16:9,c_fill,e_sharpen,f_webp,g_auto,w_1000/v1616098723/theschemaqhigh-co-ke_spnjqx.png",
-    //   url: "https://theschemaqhigh.co.ke/",
-    // },
-    // {
-    //   title: "DSC-PU",
-    //   subtitle:
-    //     "This is a club website (PWA) which incoporates push notifications to notify users on upcoming events.",
-    //   image: require("./assets/images/projects/dsc-pu.webp"),
-    //   url: "https://dsc-pwani.firebaseapp.com",
-    // },
-    // {
-    //   title: "Weather App",
-    //   subtitle:
-    //     "A wetaher web app (PWA) that lets you know the weather of a place or current geolocation.",
-    //   image: require("./assets/images/projects/weather-app.webp"),
-    //   url: "https://reactweather-app.netlify.app",
-    // },
   ],
 }
 
@@ -331,7 +280,7 @@ const achievementSection = {
       title: "Vue.js",
       subtitle:
         "Vue.js Certifcation from Udemy",
-      image: "https://vuejs.org/images/logo.svg",
+      image: "https://res.cloudinary.com/james-m/image/upload/f_webp/v1653078727/1024px-Vue.js_Logo_2.svg_l4m58y.png",
       footerLink: [
         { name: "Certification", url: "https://udemy-certificate.s3.amazonaws.com/image/UC-f07c35a2-1b10-47fa-8ba1-5a3fac7ccf9b.jpg?v=1621659397000" },
         { name: "Final Project", url: "https://e-comart.web.app/" },

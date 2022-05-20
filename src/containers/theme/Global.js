@@ -10,6 +10,10 @@ export const GlobalStyles = createGlobalStyle`
       border: 1px solid ${({ theme }) => theme.buttonBorder};
   }
 
+  .border-primary-hover:hover{
+    border: 1px solid ${({ theme }) => theme.buttonBorder};
+  }
+
   .header .menu-icon .navicon {
     background: ${({ theme }) => theme.text};
   }

@@ -6,6 +6,25 @@
     font-size: 16px;
 }
 
+.certificate-card-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.certificate-card-footer a {
+    font-size: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.certificate-card-footer p{
+    transition: all 0.3s linear;
+}
+
+.mt-2{
+    margin-top: 8px;
+}
+
 @media (max-width: 976px) {
     .certificate-card {
         width: calc(100% - 70px)
